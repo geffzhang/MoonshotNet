@@ -4,16 +4,25 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Title>Moonshot .NET Core client library</Title>
+    <Title>Moonshot .NET client library</Title>
     <Version>1.0.0</Version>
     <Authors>geffzhang</Authors>
     <Company />
-    <Description>A .NET Core client library for interacting with the Moonshot API, the quickest LLM inference method available. The library provides a simple and easy-to-use interface for accessing the Moonshot API, allowing developers to integrate the platform's capabilities into their applications.</Description>
+    <Description>A .NET client library for interacting with the Moonshot API, the quickest LLM inference method available. The library provides a simple and easy-to-use interface for accessing the Moonshot API, allowing developers to integrate the platform's capabilities into their applications.</Description>
     <PackageProjectUrl></PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/geffzhang/MoonshotNet</RepositoryUrl>
-    <PackageTags>Moonshot .NET Core API Client Library</PackageTags>
+    <PackageTags>Moonshot .NET  API Client Library</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <IsAotCompatible>True</IsAotCompatible>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <IsAotCompatible>True</IsAotCompatible>
   </PropertyGroup>
 
   <ItemGroup>
