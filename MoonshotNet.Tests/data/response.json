@@ -1,0 +1,22 @@
+{
+  "id": "34a9110d-c39d-423b-9ab9-9c748747b204",
+  "object": "chat.completion",
+  "created": 1708045122,
+  "model": "moonshot-v1-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Hello World"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 24,
+    "completion_tokens": 377,
+    "total_tokens": 401
+  }
+}
