@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <Title>Moonshot .NET Core client library</Title>
     <Version>1.0.0</Version>
-    <Authors>Ivaylo Gochkov</Authors>
+    <Authors>geffzhang</Authors>
     <Company />
     <Description>A .NET Core client library for interacting with the Moonshot API, the quickest LLM inference method available. The library provides a simple and easy-to-use interface for accessing the Moonshot API, allowing developers to integrate the platform's capabilities into their applications.</Description>
     <PackageProjectUrl></PackageProjectUrl>
