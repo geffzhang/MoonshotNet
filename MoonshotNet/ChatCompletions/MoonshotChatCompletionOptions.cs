@@ -17,6 +17,7 @@ public class MoonshotChatCompletionOptions
         Temperature = 1.0m;
         MaxTokens = 1024;
         TopP = 1.0m;
+        Tools = new List<FunctionTool>();
     }
 
     public MoonshotChatCompletionOptions(decimal temperature, int maxTokens, decimal topP, string? stop = null, IList<FunctionTool>? tools = null)
