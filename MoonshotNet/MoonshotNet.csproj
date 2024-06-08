@@ -13,8 +13,8 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/geffzhang/MoonshotNet</RepositoryUrl>
     <PackageTags>Moonshot .NET  API Client Library</PackageTags>
-    <PackageLicenseExpression>Apache 2.0</PackageLicenseExpression>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
