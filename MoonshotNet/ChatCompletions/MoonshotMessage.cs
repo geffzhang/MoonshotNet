@@ -13,6 +13,14 @@ public class MoonshotMessage
     public string Content { get; set; } = string.Empty;
 
     /// <summary>
+    /// The tool calls that must be resolved and have their outputs appended to subsequent input messages for the chat
+    /// completions request to resolve as configured.
+    /// Please note <see cref="ChatCompletionsToolCall"/> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
+    /// The available derived classes include <see cref="FunctionTool"/>.
+    /// </summary>
+    public List<ChatCompletionsToolCall> ToolCalls { get; set; }
+
+    /// <summary>
     /// An optional name to disambiguate messages from different users with the same role.
     /// </summary>
     public string? Name { get; set; }

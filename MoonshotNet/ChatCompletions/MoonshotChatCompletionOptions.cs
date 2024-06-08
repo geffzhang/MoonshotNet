@@ -21,9 +21,9 @@ public class MoonshotChatCompletionOptions
 
     public MoonshotChatCompletionOptions(decimal temperature, int maxTokens, decimal topP, string? stop = null, IList<FunctionTool>? tools = null)
     {
-        if (0 > temperature || temperature > 2)
+        if (0 > temperature || temperature > 1)
         {
-            throw new ArgumentOutOfRangeException(nameof(temperature), "Temperature must be between 0 and 2.");
+            throw new ArgumentOutOfRangeException(nameof(temperature), "Temperature must be between 0 and 1.");
         }
 
         //if (0 > maxTokens || maxTokens > MoonshotModel.MaxTokens(model))
@@ -31,9 +31,9 @@ public class MoonshotChatCompletionOptions
         //    throw new ArgumentOutOfRangeException(nameof(maxTokens), $"Max tokens must be between 0 and {MoonshotModel.MaxTokens(model)}.");
         //}
 
-        if (0 > topP || topP > 2)
+        if (0 > topP || topP > 1)
         {
-            throw new ArgumentOutOfRangeException(nameof(topP), "Top-P must be between 0 and 2.");
+            throw new ArgumentOutOfRangeException(nameof(topP), "Top-P must be between 0 and 1.");
         }
 
         Temperature = temperature;
