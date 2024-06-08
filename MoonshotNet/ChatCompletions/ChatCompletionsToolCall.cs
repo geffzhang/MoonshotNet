@@ -38,5 +38,9 @@ namespace MoonshotNet.ChatCompletions
             _serializedAdditionalRawData = serializedAdditionalRawData;
         }
 
+        internal InternalChatCompletionMessageToolCallFunction()
+        {
+
+        }
     }
 }
